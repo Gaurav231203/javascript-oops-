@@ -6,6 +6,14 @@ function kutta( breed , color , age , price){
     this.color=color;
     this.age= age;
     this.peice= price;
+    this.write = function (text){ // ek mathod banya 
+        //now create h1
+        let h1 = document.createElement("h1");
+        h1.textContent=text;
+        h1.style.color=color;
+        document.body.append(h1)
+
+    };
 }
 let dog1= new kutta("labra", "black", 1.5,2000);
-let dog2= new kutta("INDI", "black/black", 3,3000);
+let dog2= new kutta("INDI", "brown", 3,3000);
