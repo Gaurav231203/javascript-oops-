@@ -1,7 +1,7 @@
 //hume sikhna hai factories bana mtlb ki ek baar blueprint ban do ki hrr boject kesa dikhega orr hum log new new object with diffrent  values bana payenge 
 //yahi upr upr say  pura kaaam hai oops mai
 
-function kutta( breed , color , age , price){
+function Kutta( breed , color , age , price){
     this.breed= breed;
     this.color=color;
     this.age= age;
@@ -15,5 +15,5 @@ function kutta( breed , color , age , price){
 
     };
 }
-let dog1= new kutta("labra", "black", 1.5,2000);
-let dog2= new kutta("INDI", "brown", 3,3000);
+let dog1= new Kutta("labra", "black", 1.5,2000);
+let dog2= new Kutta("INDI", "brown", 3,3000);
