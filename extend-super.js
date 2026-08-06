@@ -5,12 +5,12 @@
 
 
 class UserInfo {
-    constructor(name,address,age ,email,role) {
+    constructor(name,address,age ,email) {
         this.name= name;
         this.address=address ;
         this.age=age ;
         this.email=email ;
-        this.role=role ;
+        this.role= "user" ;
         
     }
     write (text) {
@@ -18,14 +18,26 @@ class UserInfo {
        h1.textContent = `${this.name}: ${text}`;
 
        document.body.appendChild(h1);
+
     }
 }
     class Admin extends UserInfo {
-    constructor(name,address,age ,email,role) {
+    constructor(name,address,age ,email) {
 
-        super()
-        } 
+        super(name,address,age ,email)
+        this.role = "admin"; 
     }
+    remove(){
+        document.querySelectorAll("h1").forEach((element) => {
+            element.remove();
+            
+        }
 
- let u1 = new UserInfo ("gaurav","ksp",22,"abc@gmail.com","user1");
- let u2 = new UserInfo ("gauri","nagar",22,"abcd@gmail.com","user2");
+        )};
+    } 
+    
+
+ let u1 = new UserInfo ("gaurav","ksp",22,"abc@gmail.com");
+ let u2 = new UserInfo ("gauri","nagar",22,"abcd@gmail.com");
+
+ let admin1 = new Admin("admin","jps",50,"admin@gmail.com");
