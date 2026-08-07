@@ -38,6 +38,6 @@ class UserInfo {
     
 
  let u1 = new UserInfo ("gaurav","ksp",22,"abc@gmail.com");
- let u2 = new UserInfo ("gauri","nagar",22,"abcd@gmail.com");
+ //let u2 = new UserInfo ("gauri","nagar",22,"abcd@gmail.com");
 
  let admin1 = new Admin("admin","jps",50,"admin@gmail.com");
